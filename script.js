@@ -274,6 +274,31 @@
     });
   }
 
+  /* ---------- Мобильное меню (бургер) ---------- */
+  var burger = document.getElementById('navBurger');
+  if (burger && nav) {
+    function setMenu(open) {
+      nav.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    burger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      setMenu(!nav.classList.contains('is-open'));
+    });
+    // закрыть при клике по ссылке (переход к якорю)
+    nav.querySelectorAll('.nav__links a').forEach(function (a) {
+      a.addEventListener('click', function () { setMenu(false); });
+    });
+    // закрыть по клику вне шапки
+    document.addEventListener('click', function (e) {
+      if (nav.classList.contains('is-open') && !nav.contains(e.target)) setMenu(false);
+    });
+    // закрыть по Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) setMenu(false);
+    });
+  }
+
   /* ---------- Анимация счётчиков в hero ---------- */
   var counterDone = false;
   function animateCounters() {
