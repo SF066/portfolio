@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сергей Фоменок — Перформанс-маркетолог</title>
+  <meta name="description" content="Перформанс-маркетолог с опытом 6+ лет. Google Ads, Яндекс Директ, VK Реклама, Telegram Ads и AI-маркетинг. Кейсы и консультации." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/sf-logo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="SF — на главную"><img src="assets/sf-logo.svg" alt="SF" /></a>
+      <nav class="nav__links">
+        <a href="#about">Обо мне</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#ai">AI-маркетинг</a>
+        <a href="#services">Услуги</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a href="https://t.me/tvngler" target="_blank" rel="noopener" class="btn btn--small">Консультация</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container" id="about">
+      <div class="hero__grid">
+        <div class="hero__left reveal" data-reveal>
+          <div class="hero__photo">
+            <img src="assets/photo.png" alt="Сергей Фоменок" loading="eager" />
+          </div>
+          <div class="stats stats-card">
+            <div class="stat">
+              <span class="stat__num" data-count="6">6+</span>
+              <span class="stat__label">лет в маркетинге</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="100">100M+</span>
+              <span class="stat__label">реализованного бюджета, ₽</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="500">500K+</span>
+              <span class="stat__label">привлечённых подписчиков</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="300">300+</span>
+              <span class="stat__label">реализованных кейсов</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card reveal" data-reveal data-reveal-delay="100">
+          <h1 class="hero__name">Сергей Фоменок</h1>
+          <p class="hero__lead">
+            Сертифицированный специалист по рекламе, маркетингу и SMM, <strong>6+ лет</strong> опыта.
+            Беру задачу под ключ: от стратегии и упаковки до рекламы, аналитики, CRM и AI-инструментов, —
+            чтобы всё работало как система, а не разрозненные действия.
+          </p>
+
+          <h2 class="hero__subtitle">Ключевые навыки</h2>
+          <ul class="skills">
+            <li>Яндекс Директ</li>
+            <li>Google ADS</li>
+            <li>VK Реклама</li>
+            <li>Telegram ADS</li>
+            <li>Автоматизация n8n</li>
+            <li>SMM</li>
+            <li>Google Аналитика</li>
+            <li>Яндекс Метрика</li>
+            <li>Написание стратегии</li>
+          </ul>
+
+          <h2 class="hero__subtitle">Работаю с нейросетями</h2>
+          <div class="ai-logos" id="aiLogos"></div>
+
+          <div class="hero__actions">
+            <a href="https://t.me/tvngler" target="_blank" rel="noopener" class="btn">Заказать консультацию</a>
+            <a href="#cases" class="btn btn--ghost">Смотреть кейсы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section class="cases container" id="cases">
+      <div class="section-head reveal" data-reveal>
+        <span class="eyebrow">Портфолио</span>
+        <h2 class="section-title">Кейсы</h2>
+        <p class="section-sub">Реальные проекты с измеримыми результатами. Нажмите на карточку, чтобы открыть кейс.</p>
+      </div>
+
+      <div class="filters reveal" data-reveal id="filters"></div>
+
+      <div class="cases__grid" id="casesGrid"></div>
+      <div class="cases__dots" id="casesDots" aria-hidden="true"></div>
+    </section>
+
+    <!-- AI MARKETING -->
+    <section class="ai" id="ai">
+      <div class="container ai__inner">
+        <div class="ai__text reveal" data-reveal>
+          <span class="eyebrow eyebrow--light">Новое направление</span>
+          <h2 class="section-title">AI-маркетинг</h2>
+          <p>
+            Внедряю искусственный интеллект в маркетинг, чтобы оптимизировать процессы,
+            повысить точность решений и кратно ускорить запуск. Нейросети берут на себя рутину —
+            от генерации креативов и текстов до аналитики и автоматизации, — а вы получаете
+            больше результата за меньшие деньги и время.
+          </p>
+        </div>
+        <div class="ai__stats reveal" data-reveal data-reveal-delay="100">
+          <div class="ai__stat">
+            <span class="ai__num">−38%</span>
+            <span class="ai__label">стоимость лида при AI-оптимизации кампаний</span>
+          </div>
+          <div class="ai__stat">
+            <span class="ai__num">×3</span>
+            <span class="ai__label">скорость настройки рекламы</span>
+          </div>
+          <div class="ai__stat">
+            <span class="ai__num">−80%</span>
+            <span class="ai__label">стоимость создания креативов</span>
+          </div>
+          <div class="ai__stat">
+            <span class="ai__num">1 день</span>
+            <span class="ai__label">запуск лендингов</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services container" id="services">
+      <div class="section-head reveal" data-reveal>
+        <h2 class="section-title">Услуги</h2>
+        <p class="section-sub">Подключаюсь точечно как эксперт или беру проект под ключ. Оплата удобным способом: поэтапно, фикс, абонентка или почасово.</p>
+      </div>
+      <div class="services__list" id="servicesGrid"></div>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section class="cta container" id="contact">
+      <div class="cta__card reveal" data-reveal>
+        <h2 class="cta__title">Не откладывайте рост бизнеса на потом</h2>
+        <p class="cta__sub">
+          Разберу вашу нишу, найду точки роста и предложу стратегию привлечения клиентов.
+          Первичная консультация — бесплатно.
+        </p>
+        <div class="cta__actions">
+          <a href="https://t.me/tvngler" target="_blank" rel="noopener" class="btn btn--lg">Написать в Telegram</a>
+          <a href="tel:+79999263938" class="btn btn--ghost btn--lg">+7 999 926-39-38</a>
+        </div>
+        <p class="cta__note">
+          <a href="mailto:fomenoksergei066@gmail.com">fomenoksergei066@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Сергей Фоменок</span>
+      <span class="footer__links">
+        <a href="https://t.me/tvngler" target="_blank" rel="noopener">Telegram</a>
+        <a href="tel:+79999263938">+7 999 926-39-38</a>
+        <a href="mailto:fomenoksergei066@gmail.com">E-mail</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="cases.js"></script>
+  <script src="covers.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
